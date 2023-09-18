@@ -1,3 +1,37 @@
-body {background-color:aquamarine;}
-#h_1 {background-color: antiquewhite;}
-.links {background-color: yellowgreen; color: black; border: 10 solid red; margin-top: 10;}
+body {
+    background-color: aquamarine;
+}
+
+#h_1 {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+}
+
+.links {
+    background-color: yellowgreen;
+    color: black;
+    border-style: solid;
+    border-color: cornflowerblue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+#elfooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#pajarito {
+    position: relative;
+    left: 600px;
+}
