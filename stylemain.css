@@ -1,13 +1,53 @@
 header {
     background-color: #000000;
     padding: 0;
-    height: 100px;
+    height: 10%;
     position: static;
+    width: 100%;
+    align-content: center;
 }
 
 body{
-    background-color: #593825;
+    background-color:black;
+    margin: 0;
 }
+
+#coment {
+    background-color: #D9895B;
+    color: white;
+    margin: 5px;
+    border-color: #593825;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#formulario {
+    background-color: #D9895B;
+    color: white;
+    margin: 5px;
+    border-color: #593825;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#forminput{
+    border-style: solid;
+    border-color: aquamarine;
+    position: absolute;
+    left: 0%;
+    right: 74%;
+    display: inline;
+}
+
+#formimg{
+    border-style: solid;
+    border-color: aquamarine;
+    display: inline;
+
+}
+
 
 #elfooter {
     position: fixed;
@@ -24,13 +64,11 @@ body{
     position: relative;
     bottom: 1;
     left: 50%;
+    align-self: center;
     background-color: #0D0D0D;
     color: #D9895B;
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
-    clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
-    border: 3px solid red;
     height: 100%;
     }
-
