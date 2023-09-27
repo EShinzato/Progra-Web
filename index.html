@@ -1,76 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylemain.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi primera página</title>
+<title>VoleyTour</title>
 
 <body>
+    <header id="titulo">
+        <img id="imgtitle" src="Logo VoleyTourmenor.png" alt="VoleyTour">
+    </header>
 
-    <head>
-        <h1 id="h_1">APUNTES</h1>
-    </head>
     <main>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab facere provident quasi voluptates et mollitia
-            numquam quo obcaecati nesciunt eaque officia ullam totam ea, sed exercitationem error laudantium doloremque
-            <br>porro!
-        </p>
-        <p>eso de arriba es un placeholder</p>
-        <p>tambien puedo poner lorem*5 para que se repita 5 veces</p>
-        <p>con br hago salto de linea</p>
-        <p>con click derecho format document se "tabea" solo</p>
-        <img id=pajarito
-            src="data:image/jpeg;base64,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"
-            alt="texto si no funca la img">
-        <p>si quiero poner una imagen del local pongo en el source "./ y selecciono una carpeta de imagenes que haya
-            creado</p>
-        <p><a class="links" href="https://www.google.com/?hl=es">link a google</a> <br>
-            <a class="links" href="https://www.google.com/?hl=es" target="_blank">link a google</a>
-        </p>
-        <ol start="2" type="A">
-            <li>listas ordenadas</li>
-            <li>listaaaasss</li>
-        </ol>
-        <ul type="none">
-            <li>listas no ordenadas</li>
-            <li>listaaaasss</li>
-            </ol>
-            <p>bhjk</p>
-            <table>
-                <tr>
-                    <th>Enc Tabla c1</th>
-                    <th>Encabezado c2</th>
-                </tr>
-                <tr>
-                    <td>data </td>
-                    <td>data</td>
-                </tr>
-            </table>
-            <p> form get = recibir info, post = mandar info</p>
-            <form action="" method="post">
-                <input type="text" name="campo1" id="" placeholder="Escribite algo">
-                <label for="range"> Edad</label>
-                <input type="range" name="rango" id="" start="1" end="1" step="2">
-                <input type="date" name="fecha" id="">
-                <input type="reset" value="adasx">
-                <input type="hidden" name="">
-            </form>
-            <p>box model: content, padding, border, margin</p>
-            <p>posiciones: static relative fixed absolute sticky. Los globos se van hacia arriba a la izquierda por
-                defecto (static). Relative es correrse n desde static, pero no se va a mover sino agrandarse (sigue
-                ocupando el espacio anterior). Fixed es darle exactamente las coordenadas. Absolute es relativo al
-                elemento padre, no al body como el relative. El sticky es similar al fixed pero es un punto fijo como
-                las columnas fijadas en excel</p>
-            <p>Medidas absolutas: cm, px</p>
-            <p>Medidas relativas: vw (viewport wide %), vh (viewport height %), % (relativo al objento en el que está)
-            </p>
-            <p> display puede ser block o inline. block es con salto de linea.</p>
+        <div id="coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero voluptatibus
+            perspiciatis quisquam nostrum est recusandae deleniti consequuntur nulla nihil impedit iste debitis,
+            obcaecati natus voluptatum quod, quibusdam, laborum minus.</div>
+        <div id="formdiv">
+            <div id="forminput">
+                <form action="" id="formulario" method="post">
+                    <label for="cdadequipos"> ¿Cuántos equipos participarán del torneo?</label>
+                    <input type="number" name="campo1" id="cdadequipos" placeholder="Cantidad de Equipos"><br><br>
+                    <label for="todosvstodos"> ¿El formato será de todos contra todos?</label>
+                    <input type="checkbox" name="campo2" id="todosvstodos" placeholder="Todos vs Todos"><br>
+                    <label for="zonas"> ¿O será con sistema de zonas y playoffs?</label>
+                    <input type="checkbox" name="campo3" id="zonas" placeholder="Zona y Playoffs"><br><br>
+                    <label for="3sets"> ¿Los partidos serán al mejor de 3 sets?</label>
+                    <input type="checkbox" name="campo4" id="3sets" placeholder="Al mejor de 3 sets"><br>
+                    <label for="5sets"> ¿O serán al mejor de 5 sets?</label>
+                    <input type="checkbox" name="campo5" id="5sets" placeholder="Al mejor de 5 sets"><br>
+                </form>
+            </div>
+            <div id="formimage">
+                dsxawerfdcswefcx
+            </div>
+            <div id="next">
+                <button type="button"> Continuar </button>
+            </div>
+        </div>
     </main>
 
 </body>
-<footer id="elfooter">ESTO ES UN FOOTER
-
+<footer id="elfooter">Versión 1.0 por Ezequiel Shinzato
 </footer>
 
 </html>
