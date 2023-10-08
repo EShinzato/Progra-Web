@@ -12,14 +12,21 @@
     </header>
 
     <main>
-        <div id="coment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero voluptatibus
-            perspiciatis quisquam nostrum est recusandae deleniti consequuntur nulla nihil impedit iste debitis,
-            obcaecati natus voluptatum quod, quibusdam, laborum minus.</div>
+        <div id="coment">Una plataforma web diseñada para facilitar la gestión administrativa de torneos amateurs de
+            voleibol. Al usarse, se deben tener presentes las siguientes consideraciones: <br>
+            <ul>
+                <li>Al ingresarse los resultados de los partidos, no se realiza ninguna verificación sobre los puntos
+                    insertados. Esto es para dar mayor flexibilidad ante diferentes reglamentos.</li>
+                <li>Para los torneos con sistema de zonas, se busca conformar las mismas con 3 o 4 equipos máximo, para
+                    reducir la cantidad de partidos. Próximamente se añadirá la posibilidad de realizar zonas de 5
+                    equipos.</li>
+            </ul>
+        </div>
         <div id="formdiv">
             <div id="forminput">
                 <form action="" id="formulario" method="post">
                     <label for="cdadequipos"> ¿Cuántos equipos participarán del torneo?</label>
-                    <input type="number" name="campo1" id="cdadequipos" placeholder="Cantidad de Equipos"><br><br>
+                    <input type="number" name="campo1" max="16" min="3" id="cdadequipos" placeholder="16"><br><br>
                     <label for="todosvstodos"> ¿El formato será de todos contra todos?</label>
                     <input type="checkbox" name="campo2" id="todosvstodos" placeholder="Todos vs Todos"><br>
                     <label for="zonas"> ¿O será con sistema de zonas y playoffs?</label>
@@ -29,65 +36,12 @@
                     <label for="5sets"> ¿O serán al mejor de 5 sets?</label>
                     <input type="checkbox" name="campo5" id="5sets" placeholder="Al mejor de 5 sets"><br>
                 </form>
-                <div id="next">
-                    <button type="button" href="./Continuacion/cont.html"> Continuar </button>
-                    <a href="./Continuacion/cont.html">continuar</a>
+                <div id="next1">
+                    <button type="button" class="button"> <a href="./Continuacion/cont.html">Continuar</a> </button>
                 </div>
             </div>
-            <div id="formgrid" class="container">
-                <div class="a1">
-                    <p>edssdcd</p>
-                </div>
-                <div class="b1"></div>
-                <div class="c1"></div>
-                <div class="a2"></div>
-                <div class="b2"></div>
-                <div class="c2"></div>
-                <div class="a3"></div>
-                <div class="b3"></div>
-                <div class="c3"></div>
-                <div class="a4"></div>
-                <div class="b4"></div>
-                <div class="c4"></div>
-                <div class="a5"></div>
-                <div class="b5"></div>
-                <div class="c5"></div>
-                <div class="a6"></div>
-                <div class="a7"></div>
-                <div class="a8"></div>
-                <div class="a9"></div>
-                <div class="a10"></div>
-                <div class="a11"></div>
-                <div class="a12"></div>
-                <div class="a13"></div>
-                <div class="a14"></div>
-                <div class="a15"></div>
-                <div class="a16"></div>
-                <div class="a17"></div>
-                <div class="b6"></div>
-                <div class="b7"></div>
-                <div class="b8"></div>
-                <div class="b9"></div>
-                <div class="b10"></div>
-                <div class="b11"></div>
-                <div class="b12"></div>
-                <div class="b13"></div>
-                <div class="b14"></div>
-                <div class="b15"></div>
-                <div class="b16"></div>
-                <div class="b17"></div>
-                <div class="c6"></div>
-                <div class="c7"></div>
-                <div class="c8"></div>
-                <div class="c9"></div>
-                <div class="c10"></div>
-                <div class="c11"></div>
-                <div class="c12"></div>
-                <div class="c13"></div>
-                <div class="c14"></div>
-                <div class="c15"></div>
-                <div class="c16"></div>
-                <div class="c17"></div>
+            <div id="formtabla">
+                <p>Ingresa los parámetros en el cuadro de la izquierda para configurar el torneo. Luego podrás ingresar los nombres de los equipos aquí.</p>
             </div>
         </div>
     </main>
