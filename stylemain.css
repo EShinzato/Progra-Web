@@ -97,7 +97,8 @@ body{
     transition-duration: 0.4s;
     text-decoration: none;
     font-weight: bold;
-    cursor: pointer;   
+    cursor: pointer;
+    display: none;
 }
 
 .button a{
@@ -112,6 +113,9 @@ body{
     transition-duration: 0.3s;
 }
 
+#cdadequipos{
+    width: 48px;
+}
 
 @media only screen and (max-width:486px) {
     #imgtitle {
