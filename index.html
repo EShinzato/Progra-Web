@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<link rel="stylesheet" href="stylemain.css">
-<script src="script.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VoleyTour</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoleyTour</title>
 </head>
+
 <body>
     <header id="titulo">
         <img id="imgtitle" src="Logo VoleyTourmenor.png" alt="VoleyTour">
@@ -27,22 +29,200 @@
             <div id="forminput">
                 <form action="" id="formulario" method="post">
                     <label for="cdadequipos"> ¿Cuántos equipos participarán del torneo?</label>
-                    <input type="number" name="campo1" max="16" min="3" id="cdadequipos" placeholder="[3;16]" oninput="buttonAppears('5sets','3sets')" required><br><br>
+                    <input type="number" name="campo1" max="9" min="3" id="cdadequipos" placeholder="[3;9]"
+                        oninput="buttonAppears('5sets','3sets')" required><br><br>
                     <label for="todosvstodos"> ¿El formato será de todos contra todos?</label>
-                    <input type="checkbox" name="campo2" id="todosvstodos" placeholder="Todos vs Todos" onclick="checkboxArc('todosvstodos','zonas')"><br>
+                    <input type="checkbox" name="campo2" id="todosvstodos" placeholder="Todos vs Todos"
+                        onclick="checkboxArc('todosvstodos','zonas')"><br>
                     <label for="zonas"> ¿O será con sistema de zonas y playoffs?</label>
-                    <input type="checkbox" name="campo3" id="zonas" placeholder="Zona y Playoffs" onclick="checkboxArc('zonas','todosvstodos')"><br><br>
+                    <input type="checkbox" name="campo3" id="zonas" placeholder="Zona y Playoffs"
+                        onclick="checkboxArc('zonas','todosvstodos')"><br><br>
                     <label for="3sets"> ¿Los partidos serán al mejor de 3 sets?</label>
-                    <input type="checkbox" name="campo4" id="3sets" placeholder="Al mejor de 3 sets" onclick="checkboxArc('3sets','5sets')"><br>
+                    <input type="checkbox" name="campo4" id="3sets" placeholder="Al mejor de 3 sets"
+                        onclick="checkboxArc('3sets','5sets')"><br>
                     <label for="5sets"> ¿O serán al mejor de 5 sets?</label>
-                    <input type="checkbox" name="campo5" id="5sets" placeholder="Al mejor de 5 sets" onclick="checkboxArc('5sets','3sets')"><br>
+                    <input type="checkbox" name="campo5" id="5sets" placeholder="Al mejor de 5 sets"
+                        onclick="checkboxArc('5sets','3sets')"><br>
                 </form>
                 <div id="next1">
-                    <button type="button" class="button" id="next1.1"> <a href="./Continuacion/cont.html">Continuar</a> </button>
+                    <button type="button" class="button" id="next1.1"> <a href="./Continuacion/cont.html">Continuar</a>
+                    </button>
                 </div>
             </div>
             <div id="formtabla">
-                <p>Ingresa los parámetros en el cuadro de la izquierda para configurar el torneo. Luego podrás ingresar los nombres de los equipos aquí.</p>
+                <p id="intro">Ingresa los parámetros en el cuadro de la izquierda para configurar el torneo. Luego
+                    podrás ingresar
+                    los nombres de los equipos aquí.</p>
+                <div id="contenedor">
+                    <div class="bloque" id="b1">
+                        <div class="celdat" id="c1t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c11">
+                            A
+                        </div>
+                        <div class="celda" id="c12">
+                            B
+                        </div>
+                        <div class="celda" id="c13">
+                            C
+                        </div>
+                        <div class="celda" id="c14">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b2">
+                        <div class="celdat" id="c2t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c21">
+                            A
+                        </div>
+                        <div class="celda" id="c22">
+                            B
+                        </div>
+                        <div class="celda" id="c23">
+                            C
+                        </div>
+                        <div class="celda" id="c24">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b3">
+                        <div class="celdat" id="c3t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c31">
+                            A
+                        </div>
+                        <div class="celda" id="c32">
+                            B
+                        </div>
+                        <div class="celda" id="c33">
+                            C
+                        </div>
+                        <div class="celda" id="c34">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b4">
+                        <div class="celdat" id="c4t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c41">
+                            A
+                        </div>
+                        <div class="celda" id="c42">
+                            B
+                        </div>
+                        <div class="celda" id="c43">
+                            C
+                        </div>
+                        <div class="celda" id="c44">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b5">
+                        <div class="celdat" id="c5t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c51">
+                            A
+                        </div>
+                        <div class="celda" id="c52">
+                            B
+                        </div>
+                        <div class="celda" id="c53">
+                            C
+                        </div>
+                        <div class="celda" id="c54">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b6">
+                        <div class="celdat" id="c6t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c61">
+                            A
+                        </div>
+                        <div class="celda" id="c62">
+                            B
+                        </div>
+                        <div class="celda" id="c63">
+                            C
+                        </div>
+                        <div class="celda" id="c64">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b7">
+                        <div class="celdat" id="c7t">
+                            Zona 1
+                        </div>
+                        <div class="celda" id="c71">
+                            A
+                        </div>
+                        <div class="celda" id="c72">
+                            B
+                        </div>
+                        <div class="celda" id="c73">
+                            C
+                        </div>
+                        <div class="celda" id="c74">
+                            D
+                        </div>
+                    </div>
+                    <div class="bloque" id="b8">
+                        <div class="celdat" id="c8t">
+                            LIGA
+                        </div>
+                        <div class="celda" id="c81">
+                            A
+                        </div>
+                        <div class="celda" id="c82">
+                            B
+                        </div>
+                        <div class="celda" id="c83">
+                            C
+                        </div>
+                        <div class="celda" id="c84">
+                            D
+                        </div>
+                        <div class="celda" id="c85">
+                            E
+                        </div>
+                        <div class="celda" id="c86">
+                            F
+                        </div>
+                        <div class="celda" id="c87">
+                            G
+                        </div>
+                        <div class="celda" id="c88">
+                            H
+                        </div>
+                        <div class="celda" id="c89">
+                            I
+                        </div>
+                    </div>
+                    <div class="bloque" id="b9">
+                        <div class="celda" id="c9t">
+                            'Zona 1'
+                        </div>
+                        <div class="celda" id="c91">
+                            'A'
+                        </div>
+                        <div class="celda" id="c92">
+                            'B'
+                        </div>
+                        <div class="celda" id="c93">
+                            'C'
+                        </div>
+                        <div class="celda" id="c94">
+                            'D'
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -50,4 +230,5 @@
 </body>
 <footer id="elfooter">Versión 1.0 por Ezequiel Shinzato
 </footer>
+
 </html>
